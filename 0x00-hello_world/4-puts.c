@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-/**s 
- * main - returns a string
+/**
+ * main - entry
  *
- * Return: returns zero
-*/
+ * Return: return zero
+ */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
