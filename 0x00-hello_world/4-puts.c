@@ -1,7 +1,9 @@
 #include <stdio.h>
 
-/*
- * main returns a string
+/**s 
+ * main - returns a string
+ *
+ * Return: returns zero
 */
 int main(void)
 {
