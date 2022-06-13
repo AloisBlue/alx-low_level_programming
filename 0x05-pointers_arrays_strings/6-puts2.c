@@ -4,6 +4,8 @@
 
 /**
  * puts2 - print every other character
+ *
+ * @str: varible string
 */
 void puts2(char *str)
 {
