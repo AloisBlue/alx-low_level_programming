@@ -3,7 +3,7 @@
 /**
  * *_memset - fill memory with a constant byte
  *
- * @*s: pointer to s
+ * @s: pointer to s
  *
  * @b: char of b
  *
@@ -18,5 +18,5 @@ char *_memset(char *s, char b, unsigned int n)
 	p = &s;
 
 	memset(p, b, n);
-	return *p;
+	return (*p);
 }
