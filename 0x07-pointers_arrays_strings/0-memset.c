@@ -1,23 +1,23 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * *_memset - fill memory with a constant byte
  *
  * @s: pointer to s
  *
- * @b: char of b
+ * @b: replace with
  *
- * @n: the first n positions
+ * @n: the index positions
  *
  * Return: the pointer to memory area s
 */
 char *_memset(char *s, char b, unsigned int n)
 {
-	int p;
+	unsigned int i;
 
-	p = &s;
-
-	memset(p, b, n);
-	return (*p);
+	for (i = 0; i < n; i++)
+	{
+		s[i] = b;
+	}
+	return (s);
 }
