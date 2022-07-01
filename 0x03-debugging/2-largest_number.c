@@ -7,19 +7,19 @@ include "main.h"
  * @c: third integer
  * Return: largest number
  */
-int largest_number(int a , int b , int c)
+int largest_number(int a, int b, int c)
 {
 	int largest;
 
-	if (a > b && a > c)
+	if (a > b)
 	{
 		largest = a;
 	}
-	else if (b > a && b > c)
+	else
 	{
 		largest = b;
 	}
-	else
+	if (c > largest)
 	{
 		largest = c;
 	}
