@@ -7,7 +7,7 @@
 void jack_bauer(void)
 {
 	int i, j, k;
-	
+
 	k = 0;
 	for (i = 0; i < 24; i++)
 	{
@@ -17,38 +17,22 @@ void jack_bauer(void)
 			{
 				if (i < 10)
 				{
-					_putchar(k);
-					_putchar(i);
-					_putchar(':');
-					_putchar(k);
-					_putchar(j);
-					_putchar('\n');
+					printf("0%d:0%d\n", i, j);
 				}
 				else
 				{
-					_putchar(k);
-					_putchar(i);
-					_putchar(':');
-					_putchar(j);
-					_putchar('\n');
+					printf("0%d:%d\n", i, j);
 				}
 			}
 			else
 			{
 				if (j < 10)
 				{
-					_putchar(i);
-					_putchar(':');
-					_putchar(k);
-					_putchar(j);
-					_putchar('\n');
+					printf("%d:0%d\n", i, j);
 				}
 				else
 				{
-					_putchar(i);
-					_putchar(':');
-					_putchar(j);
-					_putchar('\n');
+					printf("%d:%d\n", i, j);
 				}
 			}
 		}
