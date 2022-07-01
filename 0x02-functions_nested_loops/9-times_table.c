@@ -13,7 +13,14 @@ void times_table(void)
 		for (j = 0; j < 10; j++)
 		{
 			product = i * j;
-			if (j == 9)
+			if (j == 0)
+			{
+				if (product < 10)
+					printf("%d, ", product);
+				else
+					printf("%d, ", product);
+			}
+			else if (j == 9)
 			{
 				if (product < 10)
 					printf(" %d\n", product);
