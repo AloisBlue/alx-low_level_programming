@@ -2,11 +2,13 @@
 
 void print_numbers(void)
 {
-	int i;
-
-	for (i = 0; i < 10; i++)
+	int n;
+	
+	n = 0;
+	while (n < 10)
 	{
-		_putchar(i);
+		_putchar('0' + i);
+		n++;
 	}
 	_putchar('\n');
 }
