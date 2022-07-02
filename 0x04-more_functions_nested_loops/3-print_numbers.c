@@ -1,5 +1,8 @@
 #include "main.h"
 
+/**
+ * print_numbers - prints all digits
+ */
 void print_numbers(void)
 {
 	int n;
