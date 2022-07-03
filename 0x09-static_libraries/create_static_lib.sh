@@ -5,4 +5,3 @@ do
 	gcc -c $f ./${f%.o}
 done
 ar rc liball.a *.o
-rm *.o
