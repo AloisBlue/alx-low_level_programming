@@ -3,9 +3,9 @@
 /**
  * print_name - a function that prints a name
  *
- * name: pointer to the name string
+ * @name: pointer to the name string
  *
- * f: pointer ot a function
+ * @f: pointer to a function
  *
  * Return: nothing
  */
