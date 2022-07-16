@@ -1,4 +1,4 @@
-#include "function_poiners.h"
+#include "function_pointers.h"
 
 /**
  * int_index - function that searches an interger
@@ -13,7 +13,7 @@
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	unsigned int i;
+	int i;
 
 	if (size <= 0)
 		return (-1);
@@ -22,11 +22,11 @@ int int_index(int *array, int size, int (*cmp)(int))
 		i = 0;
 		while (i < size)
 		{
-			if ((*(array + i)) != 0)
+			if (cmp(*(array + i)) != 0)
 				return (i);
-			else
-				return (-1);
 			i++;
 		}
 	}
+
+	return (-1);
 }
